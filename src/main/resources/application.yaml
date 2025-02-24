@@ -1,0 +1,32 @@
+micronaut:
+  server:
+    port: 8181
+  jms:
+    sqs:
+      enabled: true
+
+sns:
+  topic:
+    arn: arn:aws:sns:us-east-1:668548423029:demo_queue
+sqs:
+  queue:
+    newEvent:
+      name: new-feed
+    notifyUsers:
+      name: feed-${random.shortuuid}
+
+liquibase:
+  enabled: true
+  datasources:
+    default:
+      change-log: 'classpath:db/liquibase-changelog.xml'
+
+
+datasources:
+  default:
+    driverClassName: org.postgresql.Driver
+    dialect: POSTGRES
+    schema-generate: NONE
+    jdbc-url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: password
