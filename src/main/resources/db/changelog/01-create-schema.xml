@@ -14,7 +14,7 @@
             <column name="message" type="varchar(255)">
                 <constraints nullable="false"/>
             </column>
-            <column name="type" type="varchar(255)">
+            <column name="message_id" type="varchar(255)">
                 <constraints nullable="false"/>
             </column>
             <column name="user_id" type="varchar(255)">

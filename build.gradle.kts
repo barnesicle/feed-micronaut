@@ -6,7 +6,7 @@ plugins {
 }
 
 version = "0.1"
-group = "com.motivationadivisor.feed"
+group = "com.lbarnes.feed"
 
 repositories {
     mavenCentral()
@@ -50,7 +50,7 @@ dependencies {
 
 
 application {
-    mainClass = "com.motivationadivisor.feed.Application"
+    mainClass = "com.lbarnes.feed.Application"
 }
 java {
     sourceCompatibility = JavaVersion.toVersion("21")
